@@ -2,9 +2,9 @@
 
 greeting = input("How do you start a conversation? ")
 
-if greeting == "Hello":
+if greeting.lower().startswith("hello"):
     print("$0")
-elif "H" in greeting and greeting != "Hello":
-    print("20")
+elif "h" in greeting.lower():
+    print("$20")
 else:
-    print("100$")
+    print("$100")
