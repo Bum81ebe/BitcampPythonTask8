@@ -4,7 +4,7 @@ greeting = input("How do you start a conversation? ")
 
 if greeting.lower().startswith("hello"):
     print("$0")
-elif "h" in greeting.lower():
+elif greeting.lower().startswith("h"):
     print("$20")
 else:
     print("$100")
